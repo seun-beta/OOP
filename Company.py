@@ -1,12 +1,15 @@
 class Addax:
     office = 'Lagos Office'
     ext = '+234'
+    num_of_emps = 0
 
     def __init__(self, first, last, age,sex, phone) :
         self.first = first
         self.last = last
         self.phone = phone 
         self.age = self.fullname()+ "'s age is: " + str(age)
+        
+        Employee.num_of_emps +=1  #For counting the number of employees added to the class.
 
         if sex == 'M':
             self.sex = 'Male'
