@@ -9,7 +9,7 @@ class Addax:
         self.phone = phone 
         self.age = self.fullname()+ "'s age is: " + str(age)
         
-        Employee.num_of_emps +=1  #For counting the number of employees added to the class.
+       Addax.num_of_emps +=1  #For counting the number of employees added to the class.
 
         if sex == 'M':
             self.sex = 'Male'
