@@ -28,16 +28,17 @@ class Addax:
         self.location = Addax.office
         return self.location
         
+def main():
+    addax_1 = Addax('Seun','Adegoke','21','M',812)
+    print (addax_1.sex)
+    print (addax_1.pnumber())
+    print (addax_1.location())
 
-addax_1 = Addax('Seun','Adegoke','21','M',812)
+    addax_2 = Addax('Jimoh','Muhammed',23,'M','867')
+    print (addax_2.age)
+    print (addax_1.age)
 
-print (addax_1.sex)
-print (addax_1.pnumber())
-print (addax_1.location())
-
-addax_2 = Addax('Jimoh','Muhammed',23,'M','867')
-print (addax_2.age)
-print (addax_1.age)
-
+if __name__ == '__main__':
+    main()
 
             

@@ -32,12 +32,14 @@ class Car_Model(Car):
             print ('This car is not a custom car')
             
 # These are a few tests for the class Car
+def main():
+    car_1 = Car('Toyota','4L','4','V6','Diesel')
+    car_model_1 = Car_Model('Toyota','4L','4','V6','Diesel','Camry','2020','SE','Blue','Yes')
 
-car_1 = Car('Toyota','4L','4','V6','Diesel')
-car_model_1 = Car_Model('Toyota','4L','4','V6','Diesel','Camry','2020','SE','Blue','Yes')
+    print (car_model_1.description())
+    car_model_1.custom_car()
 
-print (car_model_1.description())
-car_model_1.custom_car()
-
-print (Car.num_of_cars)
+    print (Car.num_of_cars)
  
+if __name__ == '__main__':
+    main()
