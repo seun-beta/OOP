@@ -27,21 +27,23 @@ class ComplexNumber :
         return '{} is the real part while {} is the imaginary part'.format(self.real, self.imaginary)
 
 # Testing the code  
+def main():
+    complex_1 = ComplexNumber(2,5)
+    complex_2 = ComplexNumber(13,67)
+    complex_3 = ComplexNumber(345,87)
 
-complex_1 = ComplexNumber(2,5)
-complex_2 = ComplexNumber(13,67)
-complex_3 = ComplexNumber(345,87)
+    print (complex_1.__repr__())
+    print (repr(complex_1))
+    print()
+    print (complex_1.__str__())
+    print (str(complex_1))
+    print()
+    print (complex_1.__add__(complex_3))
+    print(complex_1+complex_3)
+    print (complex_1.stylize())
 
-print (complex_1.__repr__())
-print (repr(complex_1))
-print()
-print (complex_1.__str__())
-print (str(complex_1))
-print()
-print (complex_1.__add__(complex_3))
-print(complex_1+complex_3)
-print (complex_1.stylize())
+    print (ComplexNumber.num)
+    print (complex_1.normal())
 
-print (ComplexNumber.num)
-print (complex_1.normal())
-
+if __name__ == '__main__':
+    main()
