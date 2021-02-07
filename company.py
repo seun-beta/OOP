@@ -1,4 +1,4 @@
-    class Addax:
+class Addax:
     office = 'Lagos Office'
     ext = '+234'
     num_of_emps = 0
