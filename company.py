@@ -1,4 +1,5 @@
 class Addax:
+
     office = 'Lagos Office'
     ext = '+234'
     num_of_emps = 0
@@ -9,7 +10,7 @@ class Addax:
         self.phone = phone 
         self.age = self.fullname()+ "'s age is: " + str(age)
         
-        Addax.num_of_emps +=1  #For counting the number of employees added to the class.
+        Addax.num_of_emps +=1 
 
         if sex == 'M':
             self.sex = 'Male'
@@ -24,9 +25,11 @@ class Addax:
     def pnumber(self):
         self.pnumber = Addax.ext + str(self.phone)
         return self.pnumber
+        
     def location(self):
         self.location = Addax.office
         return self.location
+
         
 def main():
     addax_1 = Addax('Seun','Adegoke','21','M',812)
@@ -40,5 +43,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-            

@@ -6,8 +6,8 @@ class MobilePhone:
         self.ram = ram
         
     def short_detail(self):
-        result = 'Sim Slot Number:' + str(self.sim_slot_number) + ' RAM:' + str(self.ram) + ' Memory:' + str(self.memory)
-
+        result = 'Sim Slot Number:' + str(self.sim_slot_number)
+        + ' RAM:' + str(self.ram) + ' Memory:' + str(self.memory)
         return result
                 
         

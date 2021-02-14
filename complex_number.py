@@ -26,7 +26,7 @@ class ComplexNumber :
     def __str__ (self):
         return '{} is the real part while {} is the imaginary part'.format(self.real, self.imaginary)
 
-# Testing the code  
+  
 def main():
     complex_1 = ComplexNumber(2,5)
     complex_2 = ComplexNumber(13,67)
@@ -47,3 +47,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    

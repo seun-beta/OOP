@@ -1,4 +1,5 @@
 class Fish:
+    
     def __init__(self, first_name, last_name='Fish', skeleton='bone', eyelids=False):
         print("The object has been instantiated")
         self.first_name = first_name
@@ -15,6 +16,7 @@ class Fish:
 class Trout(Fish):
     pass
 
+
 terry = Trout('Terry')
 print(terry.skeleton)
 print(terry.eyelids)
@@ -27,6 +29,7 @@ class Clownfish(Fish):
 
     def live_with_anemone(self):
         print("The clownfish coexists with sea anemone")
+
 
 casey = Clownfish('Casey')
 casey.live_with_anemone()
